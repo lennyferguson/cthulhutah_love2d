@@ -1,0 +1,45 @@
+[submodule "libs/cargo"]
+	path = libs/cargo
+	url = https://github.com/bjornbytes/cargo.git
+[submodule "libs/tiny-ecs"]
+	path = libs/tiny-ecs
+	url = https://github.com/bakpakin/tiny-ecs.git
+[submodule "libs/knife"]
+	path = libs/knife
+	url = https://github.com/airstruck/knife
+[submodule "libs/lume"]
+	path = libs/lume
+	url = https://github.com/rxi/lume.git
+[submodule "libs/Simple-Tiled-Implementation"]
+	path = libs/Simple-Tiled-Implementation
+	url = https://github.com/karai17/Simple-Tiled-Implementation.git
+[submodule "libs/denver"]
+	path = libs/denver
+	url = https://github.com/superzazu/denver.lua
+[submodule "libs/hump"]
+	path = libs/hump
+	url = https://github.com/vrld/hump.git
+[submodule "libs/bump"]
+	path = libs/bump
+	url = https://github.com/kikito/bump.lua.git
+[submodule "libs/suit"]
+	path = libs/suit
+	url = https://github.com/vrld/suit.git
+[submodule "libs/splashy"]
+	path = libs/splashy
+	url = https://github.com/videah/splashy.git
+[submodule "libs/gamera"]
+	path = libs/gamera
+	url = https://github.com/kikito/gamera.git
+[submodule "libs/lue"]
+	path = libs/lue
+	url = https://github.com/Ulydev/lue.git
+[submodule "libs/Jumper"]
+	path = libs/Jumper
+	url = https://github.com/Yonaba/Jumper.git
+[submodule "libs/30log"]
+	path = libs/30log
+	url = https://github.com/Yonaba/30log.git
+[submodule "libs/beholder"]
+	path = libs/beholder
+	url = https://github.com/kikito/beholder.lua.git
