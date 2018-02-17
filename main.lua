@@ -1,20 +1,32 @@
--- Add to package path .lua files that are at least 2 directories down
-package.path = package.path .. 
-    ';libs/?/init.lua;libs/?/?.lua;' ..
-    'libs/?/?/?.lua;libs/?/?/init.lua;deps/?.lua'
+--[[
+    Cthulhutah game prototype
+    Author:  Stewart Charles
+    Version: 2/14/2018
+]]
+
+-- Define locals
 local cargo = require 'libs/cargo/cargo'
 local delta = 0
-
 local level = nil
+
+-- Define globals
 assets = cargo.init('assets')
 game = cargo.init('game')
 tiny = require('libs/tiny-ecs/tiny')
 class = require('libs/30log/30log')
 entity = game.entities.entity
-beholder = require('beholder')
+beholder = require('libs/beholder/beholder')
 DIM = 16
 SCALE = 5
 
+local functional = game.utils.functional
+Array = functional.Array
+Option = functional.Optional
+
+--[[
+    Invokes the cleanup function on the current level
+    and then switches to the leve supplied by the argument function
+]]
 function load_level(fn)
     if level then
         level:cleanup()

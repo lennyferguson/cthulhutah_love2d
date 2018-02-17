@@ -1,9 +1,3 @@
 return function(dx, dy)
-    if dx == nil then
-        dx = 0
-    end
-    if dy == nil then
-        dy = 0
-    end
-    return "velocity", { dx, dy }
+    return "velocity", { Option(dx):orElse(0), Option(dy):orElse(0) }
 end

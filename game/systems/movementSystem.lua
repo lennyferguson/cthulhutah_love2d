@@ -2,7 +2,6 @@ local MovementSystem = tiny.processingSystem(class 'MovementSystem')
 local MOVE_AMT = 250.0
 
 function MovementSystem:init()
-    --self.map = map
     self.filter = tiny.requireAll('position','velocity')
 end
 
